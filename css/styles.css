@@ -619,11 +619,11 @@ footer .logo {
   padding-top: 38px;
 }
 
-/* .backdrop.is-open {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-} */
+}
 
 .modal-text {
   font-weight: 500;

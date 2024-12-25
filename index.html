@@ -578,25 +578,26 @@
 
         <div class="footer-subscribe-wrapper">
           <p class="footer-subscribe-text">Subscribe</p>
-          <form>
-            <label class="footer-subscribe-label">
-              <input class="footer-subscribe-input" type="email" />
-            </label>
-          </form>
-          <label class="footer-subscribe-label">
-            <input class="footer-subscribe-input" type="email" />
-          </label>
-          <div class="button-icon">
-            <button class="footer-subscribe-button" type="button">
+
+          <form class="footer-wrapper-cont">
+            <label class="footer-subscribe-label" for="footer-email"> </label>
+              <input class="footer-subscribe-input" type="email" name="footer-email" id="footer-email" placeholder="E-mail" />
+          
+          
+            <button class="footer-subscribe-button" type="submit">
               Subscribe
-            </button>
+            
             <svg class="footer-subscribe-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-airplane"></use>
             </svg>
+          </button>
+            </form>
           </div>
         </div>
       </div>
     </footer>
+
+   
 
     <!-- ======= Modal ========= -->
 
@@ -611,12 +612,13 @@
 
         <form>
           <div class="form-wrraper-cont">
-            <label class="form-user-label"> Name</label>
+            <label class="form-user-label" for="user-name"> Name</label>
             <div class="form-user-icon-wrapper">
               <input
                 class="form-user-input"
                 type="text"
                 name="User-Name"
+                id="user-name"
                 pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
                 autofocus
                 required
@@ -629,10 +631,11 @@
           </div>
 
           <div class="form-wrraper-cont">
-            <label class="form-user-label"> Phone </label>
+            <label class="form-user-label" for="user-phone"> Phone </label>
             <div class="form-user-icon-wrapper">
               <input
                 class="form-user-input"
+                id="user-phone"
                 type="tel"
                 name="User-Phone"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
@@ -647,10 +650,11 @@
           </div>
 
           <div class="form-wrraper-cont">
-            <label class="form-user-label"> Email </label>
+            <label class="form-user-label" for="user-email"> Email </label>
             <div class="form-user-icon-wrapper">
               <input
                 class="form-user-input"
+                id="user-email"
                 type="email"
                 name="User-Email"
                 required
@@ -663,10 +667,11 @@
           </div>
 
           <div class="form-wrraper-cont">
-            <label class="form-user-label"> Comment </label>
+            <label class="form-user-label" for="user-comment"> Comment </label>
             <div class="form-user-icon-wrapper">
               <textarea
                 class="form-user-comment"
+                id="user-comment"
                 name="form-user-comment"
                 placeholder="Text input"
               ></textarea>
@@ -677,7 +682,7 @@
             <input
               class="checkbox visually-hidden"
               type="checkbox"
-              name="checkbox"
+              name="checkbox"            
               required
               id="form-user-checkbox"
             />

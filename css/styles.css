@@ -534,13 +534,13 @@ footer .logo {
 
 .footer-wrapper-cont {
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
-.footer-subscribe-wrapper {
+/* .footer-subscribe-wrapper {
   display: inline-block
 
-}
+} */
 .footer-subscribe-text {
   font-weight: 500;
   font-size: 16px;
@@ -549,11 +549,11 @@ footer .logo {
   color: #fff;
   margin-bottom: 16px;
 }
-.footer-subscribe-label {
+/* .footer-subscribe-label {
   margin-right: 24px;
   height: 40px;
   min-width: 264px;
-}
+} */
 .footer-subscribe-input {
   border: 1px solid #fff;
   border-radius: 4px;
@@ -639,11 +639,11 @@ padding-left: 16px;
   padding-top: 38px;
 }
 
-.backdrop.is-open {
+/* .backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
+} */
 
 .modal-text {
   font-weight: 500;

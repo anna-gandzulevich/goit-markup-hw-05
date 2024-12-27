@@ -674,11 +674,6 @@ color: #fff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-close:hover,
-.icon-close:focus {
-  
-  fill: #ffffff; 
-}
 
 .modal-close:hover,
 .modal-close:focus {
@@ -686,10 +681,10 @@ color: #fff;
   border: none;
 }
 
-/* .modal-close:hover+ .icon-close:hover,
-.modal-close:focus+ .icon-close:focus {
- fill: #ffffff;
-} */
+.modal-close:hover  .icon-close,
+.modal-close:focus  .icon-close {
+  fill: #ffffff;
+}
 
 .form-wrraper-cont {
   margin-bottom: 8px;
@@ -768,6 +763,10 @@ color: #fff;
   color: rgba(46, 47, 66, 0.4);
 }
 
+.form-wrraper-cont .comment {
+  margin-bottom: 16px;
+}
+
 .castom-checkbox {
   cursor: pointer;
   display: inline-flex;
@@ -829,6 +828,6 @@ color: #fff;
   text-align: center;
   color: #fff;
   cursor: pointer;
-  /* margin: 24px 96px; */
+  margin: 24px 96px;
   transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }

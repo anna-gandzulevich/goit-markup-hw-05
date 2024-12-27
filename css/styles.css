@@ -657,7 +657,6 @@ color: #fff;
   border-radius: 50%;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
-  border: none;
    width: 24px;
    height: 24px;
    display: flex;
@@ -677,16 +676,20 @@ color: #fff;
 
 .icon-close:hover,
 .icon-close:focus {
-  border: none;
-  background-color: #404bbf;
- fill: #ffffff;
+  
+  fill: #ffffff; 
 }
 
 .modal-close:hover,
 .modal-close:focus {
   background-color: #404bbf;
-  fill: #ffffff;
+  border: none;
 }
+
+/* .modal-close:hover+ .icon-close:hover,
+.modal-close:focus+ .icon-close:focus {
+ fill: #ffffff;
+} */
 
 .form-wrraper-cont {
   margin-bottom: 8px;
@@ -712,15 +715,14 @@ color: #fff;
   padding-left: 38px;
   background-color: transparent;
   outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-user-input:hover + .form-user-comment:hover ,
+.form-user-input:hover,
 .form-user-input:focus,
 .form-user-comment:hover,
 .form-user-comment:focus {
   border-color:  #4d5ae5;
-  fill: #4D5AE5
 }
 
 .form-user-icon {
@@ -777,7 +779,6 @@ color: #fff;
   height: 16px;
   border-radius: 2px;
   margin-right: 12px;
-  margin-bottom: 24px;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -807,6 +808,10 @@ color: #fff;
   color: #4d5ae5;
 }
 
+.form-wrapper-checkbox {
+  margin-bottom: 24px;
+}
+
 .form-button-submit {
   display: block;
   border: none;
@@ -824,6 +829,6 @@ color: #fff;
   text-align: center;
   color: #fff;
   cursor: pointer;
-  margin: 24px 96px;
+  /* margin: 24px 96px; */
   transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
